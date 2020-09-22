@@ -1,0 +1,7 @@
+{
+  repositoryOwner(login : "eveporcello"){
+    id
+    resourcePath
+    url
+  }
+  }
