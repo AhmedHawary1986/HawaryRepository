@@ -1,0 +1,25 @@
+query LastFiveFacebook($login : String!, $n:Int!)
+{
+  organization(login:$login)
+  {
+    id
+    name
+    description
+    membersWithRole(last:$n)
+    {
+      edges {
+        node {
+          id
+          name
+          login
+          company
+          avatarUrl
+        }
+      }
+    }
+    
+  }
+  
+}
+
+{"login" : "Oracle" , "n":100}
