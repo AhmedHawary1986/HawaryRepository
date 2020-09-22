@@ -1,0 +1,9 @@
+query { 
+  viewer { 
+    login
+    bio
+    id
+    avatarUrl
+    company
+  }
+}
