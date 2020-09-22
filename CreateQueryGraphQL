@@ -1,0 +1,22 @@
+query LastFiveFacebook
+{
+  organization(login:"Facebook") {
+    id
+    name
+    description
+    membersWithRole(last:5) {
+      edges {
+        node {
+          id
+          name
+          login
+          company
+          avatarUrl
+        }
+      }
+    }
+    
+  }
+  
+}
+  
