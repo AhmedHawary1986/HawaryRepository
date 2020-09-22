@@ -1,0 +1,40 @@
+{
+  ReactProject : repository(name:"react",owner:"facebook")
+  {
+    name
+    description
+    createdAt
+    homepageUrl
+    watchers(last:5)
+    {
+      edges
+      {
+        node
+        {
+          id
+          name
+          login
+          avatarUrl
+          company
+          
+        }
+      }
+    }
+    pullRequests(last:5)
+    {
+       edges
+      {
+        node
+        {
+          id
+          author
+          {
+            login
+            avatarUrl
+            resourcePath
+          }
+        }
+      }
+    }
+  }
+}
