@@ -1,0 +1,23 @@
+{
+  GraphQLRepository: repository(name:"graphql", owner:"facebook")
+  {
+   ...repoFields
+  }
+  
+  ReactRepository : repository(name:"react",owner:"facebook")
+  {
+     ...repoFields
+  }
+  
+
+}
+
+fragment  repoFields on Repository
+{
+  id
+  name
+  description
+  homepageUrl
+  createdAt
+}
+
